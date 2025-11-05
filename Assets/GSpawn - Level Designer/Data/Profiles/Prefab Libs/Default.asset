@@ -2887,8 +2887,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 6767888625490067846, guid: 572d1f473c1f7d247b943648ce866ae5, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: 33.333344
+    _pitch: -5.333313
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -4045,8 +4045,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 6198455401377025021, guid: 3f9c2a7fb92ef274eb5b79381a74f317, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: -10.666676
+    _pitch: 33.33333
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -7652,8 +7652,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 7815265207094342658, guid: 3ec3794ac9ba4d644aba787fc6ca52a7, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: 420
+    _pitch: 10.666641
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -8893,8 +8893,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 2553117770638789659, guid: 90f99e4e1141b9a4a9f0efd499d3a6ed, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: -40.666664
+    _pitch: 22.666672
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -8935,7 +8935,6 @@ MonoBehaviour:
   - {fileID: -3644533815052294003}
   - {fileID: 7824952856528275850}
   - {fileID: -4631133996590174724}
-  - {fileID: 307110122077299306}
   _prefabsVisibleInManager: 1
   _libName: Architecture
   _folderPath:
@@ -10026,9 +10025,9 @@ MonoBehaviour:
     _serializedKeys: []
     _serializedValues: []
   _spawnGuideTransformTRS:
-    _position: {x: 0, y: 0, z: 0}
-    _rotation: {x: 0, y: 0, z: 0, w: 1}
-    _scale: {x: 1, y: 1, z: 1}
+    _position: {x: 80, y: 0, z: 136}
+    _rotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+    _scale: {x: 1.0000002, y: 1.0000002, z: 1}
   _modularSnapVerticalStep: 0
   _surfaceSnapAppliedOffsetFromSurface: 0
   _modelSize: {x: 28, y: 20.56297, z: 40}
@@ -11611,8 +11610,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 6677232835031742339, guid: 7c7337b70a6c6bd48813a3894d87b125, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: 142.66669
+    _pitch: 22.666641
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -11803,8 +11802,8 @@ MonoBehaviour:
     _serializedKeys: []
     _serializedValues: []
   _spawnGuideTransformTRS:
-    _position: {x: 0, y: 0, z: 0}
-    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _position: {x: 96, y: 0, z: 99}
+    _rotation: {x: -0, y: -0, z: -0, w: -1}
     _scale: {x: 1, y: 1, z: 1}
   _modularSnapVerticalStep: 0
   _surfaceSnapAppliedOffsetFromSurface: 0
@@ -12668,8 +12667,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 2439654123750170620, guid: daa1ba2a13284284e9602ee89293bb45, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: -71.33333
+    _pitch: -21.333328
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -12978,8 +12977,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 6663121710033505679, guid: 3236a20142ce7a745b5eb7ede9e81dda, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: -15.9999695
+    _pitch: 3.3333435
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -13257,8 +13256,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 5438508207570554195, guid: 954bea7049999af4287d2bb6854ad537, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: -66.66667
+    _pitch: 34
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -13567,8 +13566,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 2376484474518910087, guid: b2a41ce6ffc760747b44969cfc743afd, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: 304
+    _pitch: 5.9999847
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -17724,7 +17723,7 @@ MonoBehaviour:
   _modularSnapVerticalStep: 0
   _surfaceSnapAppliedOffsetFromSurface: 0
   _modelSize: {x: 8, y: 6, z: 0.5}
-  _uiSelected: 0
+  _uiSelected: 1
 --- !u!114 &-3969856702666459351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20369,8 +20368,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 9052300898742353680, guid: feeeed196c2202b47a667ea055cdede5, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: 406.6667
+    _pitch: 12.666641
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -27664,7 +27663,7 @@ MonoBehaviour:
   _modularSnapVerticalStep: 0
   _surfaceSnapAppliedOffsetFromSurface: 0
   _modelSize: {x: 48, y: 33.127213, z: 66.225395}
-  _uiSelected: 0
+  _uiSelected: 1
 --- !u!114 &-750715819658554810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31452,7 +31451,7 @@ MonoBehaviour:
   _modularSnapVerticalStep: 0
   _surfaceSnapAppliedOffsetFromSurface: 0
   _modelSize: {x: 0.6868161, y: 1.2638652, z: 0.6868019}
-  _uiSelected: 0
+  _uiSelected: 1
 --- !u!114 &225401802586541273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31775,7 +31774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _guid:
     _guidString: 0d10b935-4d11-4ebd-a321-87f5c339dbca
-  _parentLib: {fileID: -6775792643584375145}
+  _parentLib: {fileID: 3762746238057925145}
   _directChildren: []
   _prefabsVisibleInManager: 1
   _libName: WoodenObjects
@@ -33090,8 +33089,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 567173603936871444, guid: de0954d4f7e38cb49a9d7c22ac90c6f1, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: -110
+    _pitch: 19.333328
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -36329,8 +36328,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 4015790478232543016, guid: 65aa60eb0a0d9914cb9f66745af6bac8, type: 3}
     _texture: {fileID: 0}
-    _yaw: 195.33334
-    _pitch: -4.0000153
+    _yaw: 35.333374
+    _pitch: 3.333313
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -36341,7 +36340,7 @@ MonoBehaviour:
   _modularSnapVerticalStep: 0
   _surfaceSnapAppliedOffsetFromSurface: 0
   _modelSize: {x: 34.3972, y: 24, z: 33.91413}
-  _uiSelected: 1
+  _uiSelected: 0
 --- !u!114 &1795969900561826547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38534,8 +38533,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 2935729923176973825, guid: 0167fbec59165d24b90871bfa78c0210, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: 51.333344
+    _pitch: 14.6666565
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -38546,7 +38545,7 @@ MonoBehaviour:
   _modularSnapVerticalStep: 0
   _surfaceSnapAppliedOffsetFromSurface: 0
   _modelSize: {x: 27.378399, y: 25.530945, z: 16.301754}
-  _uiSelected: 0
+  _uiSelected: 1
 --- !u!114 &2546531820318143007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39098,13 +39097,13 @@ MonoBehaviour:
     _serializedKeys: []
     _serializedValues: []
   _spawnGuideTransformTRS:
-    _position: {x: -0, y: 0, z: 0}
-    _rotation: {x: 0, y: 0, z: 0, w: 1}
-    _scale: {x: 1, y: 1, z: 1}
+    _position: {x: -25, y: 0, z: 84}
+    _rotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+    _scale: {x: 1.0000002, y: 1, z: 1.0000002}
   _modularSnapVerticalStep: 0
   _surfaceSnapAppliedOffsetFromSurface: 0
   _modelSize: {x: 2.6368268, y: 5.6431475, z: 0.31546357}
-  _uiSelected: 0
+  _uiSelected: 1
 --- !u!114 &2663710876813779537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39154,8 +39153,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 5738107097603360040, guid: 50c9df5078349ba4d81733be2f1593dd, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: -389.33334
+    _pitch: 29.333328
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -42555,7 +42554,8 @@ MonoBehaviour:
   _guid:
     _guidString: a4f39e7f-b53f-46a4-8538-bd8d2929bd92
   _parentLib: {fileID: -4631133996590174724}
-  _directChildren: []
+  _directChildren:
+  - {fileID: 307110122077299306}
   _prefabsVisibleInManager: 1
   _libName: ThickWallsAndArches
   _folderPath:
@@ -43492,8 +43492,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 4096828031473580434, guid: 91a103a5ff6ebee489ec6d7cc4bfc737, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: -64.66667
+    _pitch: 5.9999847
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -43897,15 +43897,15 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 5804668623556441181, guid: 7c6fd5bce46963d42a259d017468abb8, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: 41.333344
+    _pitch: -34.666656
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
   _spawnGuideTransformTRS:
-    _position: {x: 0, y: 0, z: 0}
-    _rotation: {x: 0, y: 0, z: 0, w: 1}
-    _scale: {x: 1, y: 1, z: 1}
+    _position: {x: 62, y: 0, z: 82}
+    _rotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+    _scale: {x: 1.0000002, y: 1, z: 1.0000002}
   _modularSnapVerticalStep: 0
   _surfaceSnapAppliedOffsetFromSurface: 0
   _modelSize: {x: 13.763679, y: 12.5, z: 16.562138}
@@ -46950,8 +46950,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 5230720218632848261, guid: b8ac4093b63fa1448b53eb5d3b849746, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: -44.000015
+    _pitch: 32.666656
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -47136,8 +47136,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 1550416793968582409, guid: 2efecfc86750605409a01e6a1c6fa302, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: 772.0001
+    _pitch: 2.6666718
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -51899,8 +51899,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 946769967952311982, guid: c9dd51e33ac8b8341a74a247664c829d, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: 4.666645
+    _pitch: 10.666672
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -58142,8 +58142,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 8138912314910737084, guid: dde87eaae42fec14595e23bc8ab17700, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: 208.66669
+    _pitch: -31.333374
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []
@@ -59053,8 +59053,8 @@ MonoBehaviour:
   _preview:
     _prefabAsset: {fileID: 5550873769669769040, guid: bfafb5afd81f5b8488bf6c214f413f25, type: 3}
     _texture: {fileID: 0}
-    _yaw: 0
-    _pitch: 0
+    _yaw: 110.66669
+    _pitch: -0.6666565
   _sceneToObjectGroup:
     _serializedKeys: []
     _serializedValues: []

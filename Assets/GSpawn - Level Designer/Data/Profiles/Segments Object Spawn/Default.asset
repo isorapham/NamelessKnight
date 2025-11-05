@@ -16,11 +16,11 @@ MonoBehaviour:
   _cellMode: 0
   _useSceneGridCellSize: 1
   _gridCellSize: {x: 1, y: 1, z: 1}
-  _majorAxis: 1
-  _cornerConnection: 1
+  _majorAxis: 0
+  _cornerConnection: 0
   _rotateAtCorners: 0
   _objectSkipChance: 0
-  _horizontalPadding: -0.2
+  _horizontalPadding: 0
   _verticalPadding: 0
   _volumelessObjectSize: 1
   _avoidOverlaps: 1
