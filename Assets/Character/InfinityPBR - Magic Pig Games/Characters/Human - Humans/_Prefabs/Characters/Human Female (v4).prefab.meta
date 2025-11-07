@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: fd29e2d3f6e994629b646987c9d25c89
+labels:
+- Female
+- Human
+- Infinity
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Characters/Human
+    Female (v4).prefab
+  uploadId: 794116

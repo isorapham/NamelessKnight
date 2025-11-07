@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: cd752ee01c9b44698809c454928283fc
+labels:
+- Female
+- Human
+- Infinity
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Characters
+    Unattached/Human Female Unattached (v4).prefab
+  uploadId: 794116

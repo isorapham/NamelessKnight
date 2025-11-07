@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: acae4a3e2510c4f60b0f25961c919f84
+labels:
+- Female
+- Human
+- Infinity
+- Wardrobe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Female
+    Human Armor/F_Spaulder_L.prefab
+  uploadId: 794116

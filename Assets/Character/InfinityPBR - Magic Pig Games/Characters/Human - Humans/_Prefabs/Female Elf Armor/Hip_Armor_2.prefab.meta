@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 6509d3443df7c47bb99bbd8cd8ca7233
+labels:
+- Female
+- Human
+- Infinity
+- Wardrobe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Female
+    Elf Armor/Hip_Armor_2.prefab
+  uploadId: 794116

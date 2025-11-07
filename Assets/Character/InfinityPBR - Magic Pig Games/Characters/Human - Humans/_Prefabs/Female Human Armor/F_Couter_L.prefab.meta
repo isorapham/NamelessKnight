@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: ad8bfa8ea49ea48809ccb43c521d5e4d
+labels:
+- Female
+- Human
+- Infinity
+- Wardrobe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Female
+    Human Armor/F_Couter_L.prefab
+  uploadId: 794116

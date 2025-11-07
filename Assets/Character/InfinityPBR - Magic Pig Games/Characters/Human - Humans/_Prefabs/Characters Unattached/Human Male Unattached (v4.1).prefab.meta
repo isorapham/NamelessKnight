@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 187fb328c10ea4c54a6edb0340f23f63
+labels:
+- Human
+- Infinity
+- Male
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Characters
+    Unattached/Human Male Unattached (v4.1).prefab
+  uploadId: 794116
