@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 74d5b1ee7babe47e6948fe531de1c8bb
+timeCreated: 1511934394
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/Models/Bodies/Materials/Body.mat
+  uploadId: 794116

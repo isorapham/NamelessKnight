@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 9451f0b78ef2b42be957069e4ef5d0ea
+timeCreated: 1512101346
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/Models/z_Deprecated
+    (Will be removed)/[Deprecated] No Body or Wardrobe Morphing/Materials/03___Default.mat
+  uploadId: 794116

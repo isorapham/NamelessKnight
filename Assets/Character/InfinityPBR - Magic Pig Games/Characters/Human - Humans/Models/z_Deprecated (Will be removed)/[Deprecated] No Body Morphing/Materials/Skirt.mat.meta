@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ccd97e88521504fb8878c9d46d4e541d
+timeCreated: 1512101341
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/Models/z_Deprecated
+    (Will be removed)/[Deprecated] No Body Morphing/Materials/Skirt.mat
+  uploadId: 794116
