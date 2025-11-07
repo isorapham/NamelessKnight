@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 506c5247b5b454e64bb98d6b48cd3c7a
+timeCreated: 1512364773
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/Textures
+    & Materials/Humans Texture v2/Female_Head_1.mat
+  uploadId: 794116

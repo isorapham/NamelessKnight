@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: bf10c6ab74c13473a8c7f9c58a68a38b
+timeCreated: 1512364773
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/Textures
+    & Materials/Humans Texture v2/Male_Head_6.mat
+  uploadId: 794116
