@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: abbfffadb013f435e86c1d857c933c4c
+labels:
+- Human
+- Infinity
+- Male
+- Wardrobe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Male
+    Elf Armor/Hood_1.prefab
+  uploadId: 794116

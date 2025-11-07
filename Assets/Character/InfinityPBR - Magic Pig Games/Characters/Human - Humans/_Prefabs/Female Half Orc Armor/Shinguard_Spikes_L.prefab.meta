@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: fda2d5270469c4f609096b989aa58152
+labels:
+- Female
+- Human
+- Infinity
+- Wardrobe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Female
+    Half Orc Armor/Shinguard_Spikes_L.prefab
+  uploadId: 794116

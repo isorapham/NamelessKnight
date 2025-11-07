@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 860839aad3fb940708ef1f16e8a9ff6b
+labels:
+- Hair
+- Human
+- Infinity
+- Male
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Male
+    Hair/HumanMaleHairLong.prefab
+  uploadId: 794116

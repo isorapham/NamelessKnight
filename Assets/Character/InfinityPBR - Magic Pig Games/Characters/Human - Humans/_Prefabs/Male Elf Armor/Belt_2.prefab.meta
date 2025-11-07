@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 9b968860bb48041d18edec4be700e9b9
+labels:
+- Human
+- Infinity
+- Male
+- Wardrobe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Male
+    Elf Armor/Belt_2.prefab
+  uploadId: 794116

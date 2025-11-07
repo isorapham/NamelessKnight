@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: b97015fc26efe4e52a25d7d6a5d9dc8e
+labels:
+- Female
+- Human
+- Infinity
+- Wardrobe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Female
+    Elf Armor/ManicaLeft.prefab
+  uploadId: 794116

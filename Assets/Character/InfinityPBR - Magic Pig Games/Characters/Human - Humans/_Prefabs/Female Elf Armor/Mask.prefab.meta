@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: dca21dbb94b274b76a3a0ab64ec43dde
+labels:
+- Female
+- Human
+- Infinity
+- Wardrobe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Female
+    Elf Armor/Mask.prefab
+  uploadId: 794116

@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 87b17a751a9584ce286ec964d71234e8
+labels:
+- Human
+- Infinity
+- Male
+- Wardrobe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Male
+    Half Orc Armor/ShoeL.prefab
+  uploadId: 794116

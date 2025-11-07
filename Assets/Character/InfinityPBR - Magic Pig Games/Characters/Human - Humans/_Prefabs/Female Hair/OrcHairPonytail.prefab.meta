@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 44114431e4e134006a7436e9a5a7b7ae
+labels:
+- Female
+- Hair
+- Human
+- Infinity
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Female
+    Hair/OrcHairPonytail.prefab
+  uploadId: 794116

@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: dd58261ec27bf4841841eab1b913beaf
+labels:
+- Human
+- Infinity
+- Male
+- Wardrobe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Male
+    Elf Armor/LegArmor1R.prefab
+  uploadId: 794116

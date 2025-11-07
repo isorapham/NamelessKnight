@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 870c5f5dc09f242ebbabfa630db82e9b
+labels:
+- Human
+- Infinity
+- Male
+- Wardrobe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Male
+    Half Orc Armor/Skirt.prefab
+  uploadId: 794116

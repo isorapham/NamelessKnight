@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 5f4d9d9db32684ad7a8f716b90342c8a
+labels:
+- Female
+- Human
+- Infinity
+- Wardrobe
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Female
+    Elf Armor/PoleynLeft.prefab
+  uploadId: 794116

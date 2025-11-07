@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 4129e7b66e64540f8b763246eab1bce4
+labels:
+- Hair
+- Human
+- Infinity
+- Male
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 60016
+  packageName: Human Character - Fantasy RPG
+  packageVersion: 4.3.4
+  assetPath: Assets/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Male
+    Hair/OrcMaleHairHood.prefab
+  uploadId: 794116
