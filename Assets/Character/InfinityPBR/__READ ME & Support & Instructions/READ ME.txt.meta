@@ -7,8 +7,9 @@ TextScriptImporter:
   assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
-  productId: 175483
-  packageName: Humans - Bonus Files 1
+  productId: 175185
+  packageName: Humans - Bonus Files 2
   packageVersion: 1.0
-  assetPath: Assets/InfinityPBR/__READ ME & Support & Instructions/READ ME.txt
-  uploadId: 381213
+  assetPath: Assets/Character/InfinityPBR/__READ ME & Support & Instructions/READ
+    ME.txt
+  uploadId: 381217
