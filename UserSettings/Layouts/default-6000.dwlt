@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1706.6667
     height: 1024
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 382}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1706.6666
     height: 1024
-  m_MinSize: {x: 875, y: 382}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 36
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 51
+  controlID: 137
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 52
+  controlID: 40
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 43
+  controlID: 41
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -447,7 +447,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f4faffff48d00000
+      m_ExpandedIDs: f4faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -947,7 +947,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.1586607, y: 0.037060052, z: -0.018192751, w: 0.9898867}
     speed: 2
-    m_Value: {x: 0.15812765, y: 0.03693554, z: -0.01813163, w: 0.986561}
+    m_Value: {x: -0.1586607, y: -0.037060052, z: 0.018192751, w: -0.9898867}
   m_Size:
     m_Target: 1.429165
     speed: 2
@@ -1133,8 +1133,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Character/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Male
-      Human Armor
+    - Assets/Character/InfinityPBR/_Bonus Files/Humans - 2
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1144,28 +1143,27 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Character/InfinityPBR - Magic Pig Games/Characters/Human - Humans/_Prefabs/Male
-    Human Armor
+  - Assets/Character/InfinityPBR/_Bonus Files/Humans - 2
   m_LastFoldersGridSize: 96
   m_LastProjectPath: D:\Unity3D\NamelessKnight
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 232.66669}
-    m_SelectedIDs: d4950a00
-    m_LastClickedID: 693716
-    m_ExpandedIDs: 00000000c8bd0400cabd0400ccbd0400cebd0400d0bd0400d2bd0400d4bd0400d6bd0400d8bd0400dabd0400dcbd0400debd040024c104002ac10400da950a00dc950a00ee950a00f0950a00f8950a00fa950a0068a70a006aa70a0000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 34130400
+    m_LastClickedID: 267060
+    m_ExpandedIDs: 00000000b00f0400b20f0400b40f0400b60f0400b80f0400ba0f0400bc0f0400be0f0400c00f0400c20f0400c40f0400c60f0400c80f0400ca0f0400cc0f0400ce0f0400d00f0400d20f0400d40f0400d60f0400d80f0400da0f040000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Female Human Armor
-      m_OriginalName: Female Human Armor
+      m_Name: Humans - 1
+      m_OriginalName: Humans - 1
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 693708
+      m_UserData: 267058
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -1183,7 +1181,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000c8bd0400cabd0400ccbd0400cebd0400d0bd0400d2bd0400d4bd0400d6bd0400d8bd0400dabd0400dcbd0400debd0400
+    m_ExpandedIDs: 00000000b00f0400b20f0400b40f0400b60f0400b80f0400ba0f0400bc0f0400be0f0400c00f0400c20f0400c40f0400c60f0400c80f0400ca0f0400cc0f0400ce0f0400d00f0400d20f0400d40f0400d60f0400d80f0400da0f0400
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1211,7 +1209,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000f2ba00007ab800008cb6000064820a003a930a000a960a00fe950a00
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1237,7 +1235,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 180}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 336.66666
