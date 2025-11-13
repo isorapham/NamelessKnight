@@ -1,5 +1,4 @@
 #if UNITY_EDITOR
-using MagicPigGames;
 using UnityEditor;
 #endif
 using UnityEngine;

@@ -20,78 +20,12 @@ namespace InfinityPBR
         private Color mixedColor = Color.yellow;
         private Color redColor = new Color(1f, 0.25f, 0.25f, 1f);
 
-        // Cache group type names to avoid rebuilding every GUI pass
-        private List<string> _cachedGroupTypeNames;
-        // Cache all labels once on enable
-        private static List<string> _cachedAllLabels;
-
-        // Cache for expensive AssetDatabase searches (keyed by labelMask + search)
-        private static readonly Dictionary<string, (double timestamp, UnityEngine.Object[] results)> _searchCache
-            = new Dictionary<string, (double, UnityEngine.Object[])>();
-
-        // How long to keep cache entries alive (in seconds)
-        private const double SearchCacheTtlSeconds = 5.0;
-        private string BuildSearchKey(int labelMask, string search)
-        {
-            return $"{labelMask}|{search}";
-        }
-
-        private UnityEngine.Object[] FindAssetsByLabelFast(int labelMask, string search)
-        {
-            // Build label part of the query from cached labels
-            var labels = _cachedAllLabels;
-            var labelFilters = new List<string>();
-            for (int i = 0; i < labels.Count; i++)
-            {
-                if ((labelMask & (1 << i)) != 0)
-                    labelFilters.Add($"l:{labels[i]}");
-            }
-
-            // Constrain to GameObjects/Prefabs to avoid scanning audio and other asset types
-            // (Unity treats Prefabs as GameObjects for FindAssets type filtering)
-            var typeFilter = "t:GameObject";
-
-            // Name/search filtering — keep simple; AssetDatabase supports bare tokens as name filters
-            var searchFilter = string.IsNullOrWhiteSpace(search) ? string.Empty : search.Trim();
-
-            var query = string.Join(" ", labelFilters);
-            if (!string.IsNullOrEmpty(typeFilter)) query = string.IsNullOrEmpty(query) ? typeFilter : $"{query} {typeFilter}";
-            if (!string.IsNullOrEmpty(searchFilter)) query = string.IsNullOrEmpty(query) ? searchFilter : $"{query} {searchFilter}";
-
-            var guids = AssetDatabase.FindAssets(query);
-            var results = new List<UnityEngine.Object>(guids.Length);
-            for (int i = 0; i < guids.Length; i++)
-            {
-                var path = AssetDatabase.GUIDToAssetPath(guids[i]);
-                var obj = AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(path);
-                if (obj is GameObject)
-                    results.Add(obj);
-            }
-
-            return results.ToArray();
-        }
-
-        private UnityEngine.Object[] FindAssetsByLabelCached(int labelMask, string search)
-        {
-            string key = BuildSearchKey(labelMask, search);
-            if (_searchCache.TryGetValue(key, out var entry))
-            {
-                if (EditorApplication.timeSinceStartup - entry.timestamp <= SearchCacheTtlSeconds)
-                    return entry.results;
-                _searchCache.Remove(key);
-            }
-
-            var results = FindAssetsByLabelFast(labelMask, search);
-            _searchCache[key] = (EditorApplication.timeSinceStartup, results);
-            return results;
-        }
-
         private WardrobePrefabManager WardrobePrefabManager => Manager.WardrobePrefabManager;
         private BlendShapesManager BlendShapesManager => Manager.BlendShapesManager;
 
         private PrefabAndObjectManager Manager => GetManager();
         private PrefabAndObjectManager _prefabAndObjectManager;
-        private List<string> GroupTypeNames => _cachedGroupTypeNames;
+        private List<string> GroupTypeNames => Manager.GetGroupTypeNames();
         public List<PrefabObjectVariable> variables = new List<PrefabObjectVariable>();
 
         private PrefabGroup _activateGroup;
@@ -147,10 +81,7 @@ namespace InfinityPBR
             RemoveMissingObjects();
             ReloadSources();
             
-            // Initialize our caches (force-refresh once, then read)
-            InfinityStatic.GetAllLabels(true);
-            _cachedGroupTypeNames = Manager.GetGroupTypeNames();
-            _cachedAllLabels = InfinityStatic.GetAllLabels();
+            InfinityStatic.GetAllLabels(true); // cache this
 
             Undo.undoRedoPerformed += UndoCallback;
             SetBool("Reset Since Load Equipment Object", false);
@@ -959,9 +890,8 @@ namespace InfinityPBR
 
         private void UpdateAvailableObjects(PrefabGroup prefabGroup)
         {
-            // Use cached, type-constrained search to avoid scanning huge non-Prefab asset sets (e.g., 6GB of audio)
-            var foundObjects = FindAssetsByLabelCached(prefabGroup.labelMask, prefabGroup.searchString);
-
+            var foundObjects = InfinityStatic.FindAssetsByLabel(prefabGroup.labelMask, prefabGroup.searchString);
+            
             Debug.Log($"Updating available objects based on Label & Search String selections. There are {foundObjects.Length} objects");
             prefabGroup.objectList = foundObjects;
             prefabGroup.objectListNames = foundObjects.Select(x => x.name).ToArray();
@@ -977,7 +907,6 @@ namespace InfinityPBR
 
             var tempLabelMask = Manager.labelMask;
             Manager.labelMask = DrawLabelSelection(Manager.labelMask);
-            _searchCache.Clear();
             
             // Add new labels to prefabGroups
             if (tempLabelMask != Manager.labelMask)
@@ -1019,13 +948,14 @@ namespace InfinityPBR
             
             StartVerticalBox();
             
+            
+            
             StartRow();
             Label($"Select Object by Label {symbolInfo}", 
                 $"Select Asset Labels to include. Any object which has ALL of the labels will be shown in the list. " +
                 $"Further narrow parameters via the text box. Object names must match the value of the search string.", 200);
 
             prefabGroup.labelMask = DrawLabelSelection(prefabGroup.labelMask);
-            _searchCache.Clear();
             DrawSearchString(prefabGroup);
             if (Button($"{symbolRecycle}", 25))
             {
@@ -1038,6 +968,7 @@ namespace InfinityPBR
             if (tempSearchString != prefabGroup.searchString || tempLabelMask != prefabGroup.labelMask)
                 UpdateAvailableObjects(prefabGroup);
             
+            
             if (prefabGroup.objectListNames.Length == 0)
             {
                 ContentColor(Color.red);
@@ -1046,6 +977,7 @@ namespace InfinityPBR
             }
             else
             {
+                //Space();
                 StartRow();
                 ShowSelectionPopup(prefabGroup); // The list of found objects available to be added
                 Label($"Add {symbolInfo}: ", $"\"Add\" will add only the selected object. \"Add All\" will prompt for confirmation before " +
@@ -1055,24 +987,51 @@ namespace InfinityPBR
                 BackgroundColor(Color.yellow);
                 if (Button("Add", 50))
                 {
+                    //Undo.RecordObject(Manager, "Undo Add");
+                    //AddObjectFromList(prefabGroup, prefabGroup.equipmentObjectObjects[prefabGroup.equipmentObjectIndex]);
                     AddObjectFromList(prefabGroup, (GameObject)prefabGroup.objectList[prefabGroup.objectIndex]);
                 }
                 if (Button("Add All", 75))
                 {
+                    //Undo.RecordObject(Manager, "Undo Add All");
                     if (Dialog($"Add All?", $"There are {prefabGroup.objectListNames.Length} objects. Are you sure you " +
                                             $"want to add them all?"))
                         AddAllObjectsFromList(prefabGroup);
                 }
+                //EndRow();
             
                 if (Button("Add each to new group", 145))
                 {
+                    //Undo.RecordObject(Manager, "Undo Add All");
                     AddEachFromListToNewGroup(prefabGroup);
                 }
                 EndRow();
             }
             
+            
             EndVerticalBox();
             ResetColor();
+            
+            //Space();
+            
+            /*
+            //StartRow();
+            var tempType = prefabGroup.equipmentObjectTypeIndex;
+            prefabGroup.equipmentObjectTypeIndex = Popup(prefabGroup.equipmentObjectTypeIndex, prefabGroup.equipmentObjectTypes.ToArray(), 250);
+            if (tempType != prefabGroup.equipmentObjectTypeIndex)
+            {
+                // The type was changed, so we need to re-do the cache here.
+                CacheEquipmentObjectsForGroup(prefabGroup);
+                CacheEquipmentObjectNamesForGroup(prefabGroup);
+                prefabGroup.equipmentObjectIndex = 0;
+            }
+
+            prefabGroup.equipmentObjectIndex = Popup(prefabGroup.equipmentObjectIndex, prefabGroup.equipmentObjectObjectNames.ToArray(), 250);
+            */
+
+            
+            
+            
         }
 
         private void ShowSelectionPopup(PrefabGroup prefabGroup)
@@ -1132,7 +1091,7 @@ namespace InfinityPBR
         private int DrawLabelSelection(int labelMask)
         {
             BackgroundColor(Color.yellow);
-            var allLabels = _cachedAllLabels;
+            var allLabels = InfinityStatic.GetAllLabels();
             
             // Find the index of "Infinity" in the label list
             var infinityIndex = allLabels.IndexOf("Infinity");
@@ -1161,7 +1120,7 @@ namespace InfinityPBR
 
         private void DisplaySelectedLabels(int labelMask)
         {
-            var allLabels = _cachedAllLabels;
+            var allLabels = InfinityStatic.GetAllLabels();
 
             StartRow();
             var displayString = "";

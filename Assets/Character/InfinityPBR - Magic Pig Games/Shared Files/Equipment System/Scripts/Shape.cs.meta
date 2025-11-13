@@ -3,8 +3,9 @@ guid: a2fd57961d0c45a687734bf1aa789f3d
 timeCreated: 1683437299
 AssetOrigin:
   serializedVersion: 1
-  productId: 60016
-  packageName: Human Character - Fantasy RPG
-  packageVersion: 4.3.4
-  assetPath: Assets/InfinityPBR - Magic Pig Games/Shared Files/Equipment System/Scripts/Shape.cs
-  uploadId: 794116
+  productId: 44714
+  packageName: Weapons & Armor PBR Pack #1 - Fantasy RPG
+  packageVersion: 4.3.2
+  assetPath: Assets/Character/InfinityPBR - Magic Pig Games/Shared Files/Equipment
+    System/Scripts/Shape.cs
+  uploadId: 738101

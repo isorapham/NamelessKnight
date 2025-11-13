@@ -92,9 +92,9 @@ TextureImporter:
   assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
-  productId: 60016
-  packageName: Human Character - Fantasy RPG
-  packageVersion: 4.3.4
-  assetPath: Assets/InfinityPBR - Magic Pig Games/Shared Files/Shared Materials &
-    Textures/Eye Textures/Eyes 5/BansheeExploded_Eyes_mat_MetalAOHeightRough.png
-  uploadId: 794116
+  productId: 44714
+  packageName: Weapons & Armor PBR Pack #1 - Fantasy RPG
+  packageVersion: 4.3.2
+  assetPath: Assets/Character/InfinityPBR - Magic Pig Games/Shared Files/Shared Materials
+    & Textures/Eye Textures/Eyes 5/BansheeExploded_Eyes_mat_MetalAOHeightRough.png
+  uploadId: 738101

@@ -187,48 +187,36 @@ namespace InfinityPBR
         /// <param name="equipmentObject"></param>
         /// <param name="rootBoneTransform"></param>
         /// <param name="targetSkinnedMeshRenderer"></param>
-        private static void AddEquipmentBonesToParent(
-            EquipmentObject equipmentObject,
-            Transform rootBoneTransform,
+        private static void AddEquipmentBonesToParent(EquipmentObject equipmentObject, Transform rootBoneTransform,
             SkinnedMeshRenderer targetSkinnedMeshRenderer)
         {
-            // 1) Cache all existing parent bones into a name→Transform map
-            var parentBones = rootBoneTransform.GetComponentsInChildren<Transform>();
-            var boneMap = parentBones.ToDictionary(t => t.name, t => t);
-    
-            // 2) Grab the current bone array once, as a List for easy adding
-            var bonesList = targetSkinnedMeshRenderer.bones.ToList();
-    
-            // 3) Loop over equipment bones only once
-            foreach (var child in equipmentObject.boneRoot.GetComponentsInChildren<Transform>())
+            var parentBones = rootBoneTransform.GetComponentsInChildren<Transform>(); // Get the list of bones
+            foreach (Transform child in equipmentObject.boneRoot.GetComponentsInChildren<Transform>())
             {
-                // O(1) lookup now!
-                if (boneMap.ContainsKey(child.name))
-                    continue;
-        
-                // Find the parent bone transform by name (also O(1))
-                if (!boneMap.TryGetValue(child.parent.name, out var parentBoneTransform))
-                {
-                    Debug.LogWarning($"Parent bone '{child.parent.name}' not found for '{child.name}'");
-                    continue;
-                }
-        
-                // Create the new bone under the parent, matching the child's local transform
-                var newBone = new GameObject(child.name).transform;
-                newBone.SetParent(parentBoneTransform, false);
-                newBone.localPosition = child.localPosition;
-                newBone.localRotation = child.localRotation;
-                newBone.localScale    = child.localScale;
-        
-                // 4) Remember it in our map and in our bone list
-                boneMap[child.name] = newBone;
-                bonesList.Add(newBone);
+                if (BonesContain(child.name, parentBones)) continue; // If we have the bone already, we skip
+                //Debug.Log($"Bone {child.name} was not found...");
+                // Cache the name of the parent bone from the child bone list and then get that bone from the parent as well.
+                var parentBoneName = child.transform.parent.name;
+                var parentBoneTransform = GetBone(parentBoneName, parentBones);
 
+                // Create the new bone on the parent, and set the transform values to match the child bone
+                var newBone = new GameObject(child.name);
+                newBone.transform.parent = parentBoneTransform;
+                newBone.transform.localPosition = child.localPosition;
+                newBone.transform.localRotation = child.localRotation;
+                newBone.transform.localScale = child.localScale;
+                parentBones = rootBoneTransform.GetComponentsInChildren<Transform>(); // Recompute the list of bones
+
+                var bones = new List<Transform>();
+                foreach (Transform bone in targetSkinnedMeshRenderer.bones)
+                    bones.Add(bone);
+                
+                bones.Add(newBone.transform);
+                targetSkinnedMeshRenderer.bones = bones.ToArray();
+                
+                
                 TryDebugMessage($"Added a bone to the parent called {newBone.name}!");
             }
-    
-            // 5) Only one final array assignment
-            targetSkinnedMeshRenderer.bones = bonesList.ToArray();
         }
 
         private static bool BonesContain(string childName, Transform[] parentBones) => GetBone(childName, parentBones) != null;

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: acbfff20649c740e4967fc0e94308761
+labels:
+- Infinity
+- Sword
+- Weapon
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 44714
+  packageName: Weapons & Armor PBR Pack #1 - Fantasy RPG
+  packageVersion: 4.3.2
+  assetPath: Assets/Character/InfinityPBR - Magic Pig Games/Weapons & Armor/Weapon
+    Objects/Swords/Sword002/Prefab/Sword002.prefab
+  uploadId: 738101
