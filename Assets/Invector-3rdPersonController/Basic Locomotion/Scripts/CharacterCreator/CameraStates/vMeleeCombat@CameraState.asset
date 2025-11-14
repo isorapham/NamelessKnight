@@ -16,12 +16,12 @@ MonoBehaviour:
   tpCameraStates:
   - Name: Default
     forward: -1
-    right: 0
-    defaultDistance: 2.5
+    right: 0.2
+    defaultDistance: 3.5
     maxDistance: 8
     minDistance: 0.6
     height: 1.8
-    smooth: 10
+    smooth: 14
     smoothDamp: 4
     xMouseSensitivity: 3
     yMouseSensitivity: 3
