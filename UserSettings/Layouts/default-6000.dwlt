@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 1024
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 100
+  controlID: 17
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -421,10 +421,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 2744.3333}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 0407feff3807feff3c07feff4007feff4407feff2a08feff2e08feff3208feff8208feff8608feff1e09feff2809fefff4faffff76c30000aec4000030cb000064ce0000b0d200008cd300005ed7000056ef000004f20000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 2ad70000
+      m_LastClickedID: 55082
+      m_ExpandedIDs: f4faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -874,9 +874,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -4.7070947, y: 1.7149885, z: 76.89404}
+    m_Target: {x: -5.0518117, y: -1.3561842, z: 20.690157}
     speed: 2
-    m_Value: {x: -4.7070947, y: 1.7149885, z: 76.89404}
+    m_Value: {x: -5.0518117, y: -1.3561842, z: 20.690157}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -922,13 +922,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.06585235, y: 0.2078211, z: -0.013752874, w: -0.9760953}
+    m_Target: {x: -0.15507011, y: 0.23643747, z: -0.038015485, w: -0.9587009}
     speed: 2
-    m_Value: {x: -0.065850355, y: 0.20679554, z: -0.0136837475, w: -0.9760697}
+    m_Value: {x: -0.15595122, y: 0.2372982, z: -0.038398504, w: -0.9580681}
   m_Size:
-    m_Target: 6.1835318
+    m_Target: 6.5697803
     speed: 2
-    m_Value: 6.1835318
+    m_Value: 6.879351
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1183,7 +1183,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Character/InfinityPBR - Magic Pig Games/Characters/Goblin/_Prefabs
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1193,16 +1193,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Character/InfinityPBR - Magic Pig Games/Characters/Goblin/_Prefabs
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Unity3D\NamelessKnight
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 131}
-    m_SelectedIDs: 62260400
-    m_LastClickedID: 271970
-    m_ExpandedIDs: 00000000fa200400fc200400fe20040000210400022104000421040006210400082104000a21040000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 94270400
+    m_LastClickedID: 272276
+    m_ExpandedIDs: 000000009427040096270400982704009a2704009c2704009e270400a0270400a2270400a427040000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1231,7 +1231,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fa200400fc200400fe20040000210400022104000421040006210400082104000a210400
+    m_ExpandedIDs: 000000009427040096270400982704009a2704009c2704009e270400a0270400a2270400a4270400
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1259,7 +1259,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000f2ba00007ab800008cb6000064820a003a930a000a960a00fe950a00fa2204000e230400
     m_RenameOverlay:
       m_UserAcceptedRename: 0
